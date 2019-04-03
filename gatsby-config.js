@@ -1,5 +1,3 @@
-const path = require(`path`)
-
 module.exports = {
   plugins: [
     {
@@ -18,7 +16,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-favicon`
+    `gatsby-plugin-favicon`,
+    `gatsby-plugin-styled-components`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',

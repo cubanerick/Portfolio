@@ -5,20 +5,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from 'gatsby-image'
 
-const ImageDisplay = styled.header`
+const ImageDisplay = styled.div`
   .Wrapper2 {
     display: none;
     transition: ease 0.5s;
   }
     .button{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        cursor: pointer;
-        transition: ease 0.5s;
-        border-radius: 50%;
-        margin: 0;
-        z-index: 1;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: ease 0.5s;
+      border-radius: 50%;
+      margin: 0;
+      z-index: 1;
     }
     .button:hover {
         transform: rotate('180deg');
@@ -27,11 +27,11 @@ const ImageDisplay = styled.header`
     }
     @keyframes rotation {
         from {
-            -webkit-transform: rotate(0deg);
-		}
-		to {
-            -webkit-transform: rotate(359deg);
-		}
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(359deg);
+        }
     }
 `;
 
