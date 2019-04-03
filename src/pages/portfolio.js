@@ -326,7 +326,7 @@ const Portfolio = ({data}) => (
           <h3 style={{marginTop: '20px'}}><a href='https://www.beyondtheagency.co' >Beyondtheagency.co</a></h3>
           <ul>
             <li className=''>
-              <h6 style={{display: 'inline-block'}}><a href='https://www.beyondtheagency.co' >Beyondtheagency.co</a></h6> was developed in conjuction with Beyond the agencie's in-house design team to be the Agencies online prescence, showcasing the amazing work this agency has to offer.
+              <h6 style={{display: 'inline-block'}}><a href='https://www.beyondtheagency.co' >Beyondtheagency.co</a></h6> was developed in conjuction with Beyond the agency's in-house design team to be its online prescence, showcasing the amazing work this agency has to offer.
             </li>
             <li className=''>
               Work closely with the Creative directors to plan UI according to UX considerations.
