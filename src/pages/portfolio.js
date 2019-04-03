@@ -342,7 +342,7 @@ const Portfolio = ({data}) => (
           <ImageDisplay>
             <button className='button' onClick={click3}><Img fixed={data.Plus.childImageSharp.fixed} /></button>
             <div className={`Wrapper2`} id={`ImageDisplayWapper3`}>
-                <Img style={{marginBottom: '40px'}} fluid={data.BeyondMobile.childImageSharp.fluid}/>
+                <Img style={{marginBottom: '40px', maxWidth: '400px'}} fluid={data.BeyondMobile.childImageSharp.fluid}/>
             </div>
            </ImageDisplay>
 
