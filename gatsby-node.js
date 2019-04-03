@@ -3,7 +3,11 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-createRedirect({ fromPath: "http://erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true })
-createRedirect({ fromPath: "https://erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true })
-createRedirect({ fromPath: "https://www.erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true })
-// You can delete this file if you're not using it
+
+exports.createPages = ({ graphql, actions }) => {
+    const { createPage, createRedirect } = actions
+    
+    createRedirect({ fromPath: "http://erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true , force: true})
+    createRedirect({ fromPath: "https://erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true , force: true})
+    createRedirect({ fromPath: "https://www.erickecheverria.com", toPath: "https://erickecheverria.tech", isPermanent: true , force: true})
+}
