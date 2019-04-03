@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -190,21 +189,6 @@ const LargeText = styled.span`
   padding-right: 20px;
   padding-left: 10px;
 `;
-const Orange = styled.div`
-  background-color: rgba(240, 101, 67, 0.7);
-  padding: 10px;
-  display: block;
-  h3 {
-    text-align: right;
-    margin: 0;
-  }
-  .position {
-    text-align: right;
-  }
-  .symbol {
-    font-size: 20px;
-  }
-`;
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -270,7 +254,7 @@ const IndexPage = ({data}) => (
         <h2>Education</h2>
         <div className='education'>
           <h3>UCLA Extension</h3>
-          <iframe frameBorder="0" scrolling="no" src="https://uclaextension.credly.com/embed.html#/?member_badge_id=15115246" width="180" height="230"></iframe>
+          <iframe frameBorder="0" title='UCLA Extension | Full Stack Web Development Bootcamp Certificate' scrolling="no" src="https://uclaextension.credly.com/embed.html#/?member_badge_id=15115246" width="180" height="230"></iframe>
 
           <Img className='schoolLogo' fluid={data.ASU.childImageSharp.fluid}/>
           <h3>Arizona State University</h3>

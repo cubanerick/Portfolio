@@ -342,7 +342,7 @@ const Portfolio = ({data}) => (
           <ImageDisplay>
             <button className='button' onClick={click3}><Img fixed={data.Plus.childImageSharp.fixed} /></button>
             <div className={`Wrapper2`} id={`ImageDisplayWapper3`}>
-                <Img style={{marginBottom: '40px'}} fixed={data.BeyondMobile.childImageSharp.fixed}/>
+                <Img style={{marginBottom: '40px'}} fluid={data.BeyondMobile.childImageSharp.fluid}/>
             </div>
            </ImageDisplay>
 
@@ -432,8 +432,8 @@ export const query = graphql`
     }
     BeyondMobile: file(relativePath: { eq: "BeyondMobile.png" }) {
       childImageSharp {
-        fixed(quality: 100, width: 400) {
-          ...GatsbyImageSharpFixed
+        fluid(quality: 100, maxWidth: 400) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

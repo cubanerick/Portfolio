@@ -19,6 +19,22 @@ const Wrapper = styled.header`
   .border {
     border-bottom: 3px solid white;
   }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    div {
+      #About {
+        font-size: 12px;
+      }
+      #Portfolio {
+        font-size: 12px;
+      }
+    }
+  }
 `;
 
 const Title = styled.h2`
@@ -39,9 +55,9 @@ const IconWrapper = styled.div`
   grid-row: 2;
   display: grid;
   display: -ms-grid;
-  -ms-grid-columns: 120px 1fr;
+  -ms-grid-columns: 100px 1fr;
   -ms-grid-rows: 1fr;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 100px 1fr;
   grid-template-rows: 1fr;
 `;
 
@@ -73,7 +89,7 @@ const Header = () => (
       }
       linkedinWhite: file(relativePath: { eq: "linkedin-white.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 89, height: 89) {
+          fixed(quality: 100, width: 75, height: 75) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -102,13 +118,13 @@ const Header = () => (
         <Routes>
 
           <Location>{({location}) =>
-            <Link to="/" className={location.pathname === '/'? 'border': 'noBorder'} style={{textDecoration: 'none', color: 'white', padding: '10px', transition: 'ease 0.5s'}}>
+            <Link id="About" to="/" className={location.pathname === '/'? 'border': 'noBorder'} style={{textDecoration: 'none', color: 'white', padding: '10px', transition: 'ease 0.5s'}}>
               About
             </Link>
          }</Location>
 
          <Location>{({location}) =>
-            <Link to="/portfolio" className={location.pathname === '/portfolio'? 'border': 'noBorder'} style={{textDecoration: 'none', color: 'white', padding: '10px', transition: 'ease 0.5s'}}>
+            <Link id="Portfolio" to="/portfolio" className={location.pathname === '/portfolio'? 'border': 'noBorder'} style={{textDecoration: 'none', color: 'white', padding: '10px', transition: 'ease 0.5s'}}>
               Portfolio
             </Link>
           }</Location>
