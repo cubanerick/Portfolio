@@ -268,10 +268,10 @@ const Portfolio = ({data}) => (
           <h3>Development</h3>
           <ul>
             <li className=''>
-              <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com' >Orthomattress.com</a></h6> was developed using React and Next.js to provide server-side rendering. This resulted in a performance benfit for Ortho Mattress customers, and consistent SEO performance. Sole Developer on these projects.
+              <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com' >Orthomattress.com</a></h6> was developed using React and Next.js to provide server-side rendering. This resulted in a performance benfit for Ortho Mattress customers, and consistent SEO performance. I was the Sole Developer on these projects.
             </li>
             <li className=''>
-              Worked closely with the Senior Designer to implement design efforts across the new web platform. A CMS was create using Contentful which allowing for all the traditional CMS features.
+              Worked closely with the Senior Designer to implement design efforts across the new web platform. A CMS was created using Contentful which allowed for all the traditional CMS features.
             </li>
             <li>
             <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com/stores' >Orthomattress.com/stores</a></h6> is a Location finder for all Ortho Mattress stores using Google Maps Api  
