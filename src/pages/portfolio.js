@@ -99,100 +99,12 @@ const Wrapper = styled.div`
     grid-column: 2;
   }
 
-  .HTML {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .CSS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .JS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .React {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .NodeJS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .NextJS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .GraphQL {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .Git {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .Azure {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .Gatsby {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .Heroku {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .mysql {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .mongodb {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
   .work {
     grid-column: 1/3;
     width: 100%;
     display: block;
   }
-  .skillImg {
-    font-size: 13px;
-  }
-  .skillImg:hover {
-    transition: ease 0.6s;
-    cursor: pointer;
-    p{
-      color: #113255;
-      transition: ease 0.6s;
-    }
-  }
+  
   .displayNone {
     color: #FCF9EE;
   }

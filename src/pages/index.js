@@ -16,8 +16,6 @@ const Wrapper = styled.div`
 
   .grid1 {
     max-width: 300px;
-    /* padding-top: 40px; */
-    /* width: 100%; */
     display: grid;
     display: -ms-grid;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -53,84 +51,16 @@ const Wrapper = styled.div`
     grid-column: 2;
   }
 
-  .HTML {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
+  .col1 {
     grid-column: 1;
   }
-  .CSS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
+  .col2 {
     grid-column: 2;
   }
-  .JS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
+  .col3 {
     grid-column: 3;
   }
-  .React {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .NodeJS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .NextJS {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .GraphQL {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .Git {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .Azure {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 1;
-  }
-  .Gatsby {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .Heroku {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
-  .mysql {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 3;
-  }
-  .mongodb {
-    padding: 10px;
-    margin: auto;
-    width: 100px;
-    grid-column: 2;
-  }
+
   .work {
     grid-column: 1/3;
     width: 100%;
@@ -138,6 +68,9 @@ const Wrapper = styled.div`
   }
   .skillImg {
     font-size: 13px;
+    padding: 10px;
+    margin: auto;
+    width: 100px;
   }
   .skillImg:hover {
     transition: ease 0.6s;
@@ -168,7 +101,6 @@ const Wrapper = styled.div`
   .ListTitle {
     font-weight: 700;
     color: #113255; 
-    /* list-style-type: none; */
     margin: 0;
     padding: 0;
   }
@@ -203,51 +135,21 @@ const IndexPage = ({data}) => (
       <p><LargeText>I</LargeText> am a full-stack web developer experienced working with interdisciplinary teams to build high quality websites, that follow best practices, SEO, and responsive design. I have developed, launched, and maintained multiple projects, including setting up Dev-Ops and hosting. I have a passion for writing clean code and continued education in the computer sciences.</p>
     </div>
     <Wrapper>
-    {/* <h2 style={{gridColumn: '1/3'}}>Work Experience</h2>
-        <div className='work'>
-          <Orange>
-            <p className='symbol'>{`</> Sep 2018 - Present`}</p>
-            <h3>Ortho Mattress, Inc.</h3>
-            <p className='position'>Full Stack Web Developer- Sole Developer</p>
-          </Orange>
-
-          <h3><a href='httpD://www.orthomattreDs.com' target='_blank'>Orthomattress.com</a></h3>
-          <ul>
-            <li className=''>
-              <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com' target='_blank'>Orthomattress.com</a></h6> was developed using React and Next.js to provide server-side rendering. This resulted in a performance benfit for Ortho Mattress customers, and consistent SEO performance.
-            </li>
-            <li className=''>
-              Worked closely with the Senior Designer to implement design efforts across the new web platform. A CMS was create using Contentful which allowing for all the traditional CMS features.
-            </li>
-            <li>
-            <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com/stores' target='_blank'>Orthomattress.com/stores</a></h6> is a Location finder for all Ortho Mattress stores using Google Maps Api  
-            </li>
-            <li>
-             Programatically created server-side rendered location pages from location data.
-            </li>
-            <li>
-              Create and maintain implementation of marketing tools such as Google Tags and Facebook pixels, and maintain the highest SEO. 
-            </li>
-            <li>
-              Cooperate with third party services and API's to increase website functionality.
-            </li>
-          </ul>
-        </div> */}
     <h2 className='title'>Tech Stack</h2>
       <div className='grid1'>
-        <div className='HTML skillImg'><Img fluid={data.HTML.childImageSharp.fluid}/><p className='displayNone'>HTML</p></div>
-        <div className='CSS skillImg'><Img fluid={data.CSS.childImageSharp.fluid}/><p className='displayNone'>CSS</p></div>
-        <div className='JS skillImg'><Img fluid={data.JS.childImageSharp.fluid}/><p className='displayNone'>Javascript</p></div>
-        <div className='React skillImg'><Img fluid={data.React.childImageSharp.fluid}/><p className='displayNone'>React</p></div>
-        <div className='NodeJS skillImg'><Img fluid={data.NodeJS.childImageSharp.fluid}/><p className='displayNone'>Node</p></div>
-        <div className='GraphQL skillImg'><Img fluid={data.GraphQL.childImageSharp.fluid}/><p className='displayNone'>GraphQL</p></div>
-        <div className='NextJS skillImg'><Img fluid={data.NextJS.childImageSharp.fluid}/><p className='displayNone'>Next.js</p></div>
-        <div className='Gatsby skillImg'><Img fluid={data.Gatsby.childImageSharp.fluid}/><p className='displayNone'>Gatsby</p></div>
-        <div className='Git skillImg'><Img fluid={data.Git.childImageSharp.fluid}/><p className='displayNone'>Git</p></div>
-        <div className='Azure skillImg'><Img fluid={data.Azure.childImageSharp.fluid}/><p className='displayNone'>Azure</p></div>
-        <div className='Heroku skillImg'><Img fluid={data.Heroku.childImageSharp.fluid}/><p className='displayNone'>Heroku</p></div>
-        <div className='mysql skillImg'><Img fluid={data.mysql.childImageSharp.fluid}/><p className='displayNone'>MySQL</p></div>
-        <div className='mongodb skillImg'><Img fluid={data.mongodb.childImageSharp.fluid}/><p className='displayNone'>MongoDB</p></div>
+        <div className='col1 skillImg'><Img fluid={data.HTML.childImageSharp.fluid}/><p className='displayNone'>HTML</p></div>
+        <div className='col2 skillImg'><Img fluid={data.CSS.childImageSharp.fluid}/><p className='displayNone'>CSS</p></div>
+        <div className='col3 skillImg'><Img fluid={data.JS.childImageSharp.fluid}/><p className='displayNone'>Javascript</p></div>
+        <div className='col1 skillImg'><Img fluid={data.React.childImageSharp.fluid}/><p className='displayNone'>React</p></div>
+        <div className='col2 skillImg'><Img fluid={data.NodeJS.childImageSharp.fluid}/><p className='displayNone'>Node</p></div>
+        <div className='col3 skillImg'><Img fluid={data.GraphQL.childImageSharp.fluid}/><p className='displayNone'>GraphQL</p></div>
+        <div className='col1 skillImg'><Img fluid={data.NextJS.childImageSharp.fluid}/><p className='displayNone'>Next.js</p></div>
+        <div className='col2 skillImg'><Img fluid={data.Gatsby.childImageSharp.fluid}/><p className='displayNone'>Gatsby</p></div>
+        <div className='col3 skillImg'><Img fluid={data.Git.childImageSharp.fluid}/><p className='displayNone'>Git</p></div>
+        <div className='col1 skillImg'><Img fluid={data.Azure.childImageSharp.fluid}/><p className='displayNone'>Azure</p></div>
+        <div className='col2 skillImg'><Img fluid={data.Heroku.childImageSharp.fluid}/><p className='displayNone'>Heroku</p></div>
+        <div className='col3 skillImg'><Img fluid={data.mysql.childImageSharp.fluid}/><p className='displayNone'>MySQL</p></div>
+        <div className='col2 skillImg'><Img fluid={data.mongodb.childImageSharp.fluid}/><p className='displayNone'>MongoDB</p></div>
       </div>
 
       <div className='grid2'>
