@@ -180,16 +180,13 @@ const Portfolio = ({data}) => (
           <h3>Development</h3>
           <ul>
             <li className=''>
-              <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com' >Orthomattress.com</a></h6> was developed using React and Next.js to provide server-side rendering. This resulted in a performance benfit for Ortho Mattress customers, and consistent SEO performance. I was the Sole Developer on these projects.
+              <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com' >Orthomattress.com</a></h6> was developed using React.js/Next.js for a server-side rendered frontend, on top of a Node.js/Express backend.
             </li>
             <li className=''>
               Worked closely with the Senior Designer to implement design efforts across the new web platform. A CMS was created using Contentful which allowed for all the traditional CMS features.
             </li>
             <li>
-            <h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com/stores' >Orthomattress.com/stores</a></h6> is a Location finder for all Ortho Mattress stores using Google Maps Api  
-            </li>
-            <li>
-             Programatically created server-side rendered location pages from location data.
+              <h6 style={{display: 'inline-block'}}>Developed<a href='https://www.orthomattress.com/stores' >Orthomattress.com/stores</a> , a Location finder for all Ortho Mattress stores and dynamically create server-side rendered pages for all locations.</h6>
             </li>
             <li>
               Create and maintain implementation of marketing tools such as Google Tags and Facebook pixels, and maintain the highest SEO. 
@@ -209,16 +206,13 @@ const Portfolio = ({data}) => (
           <h3>Dev-Ops</h3>
           <ul>
             <li>
-              Manage Microsoft Azure Resoures and architect cloud platform for the Node.js Web Application.
+            	Manage Azure resources and created Azure Dev-Ops project for the web app with CI/CD pipeline and manage performance and traffic.
             </li>
             <li>
-              Setup automated SSL certification with Let's Encrypt Extension.
+              Configure automated SSL certification with Let's Encrypt.
             </li>
             <li>
-              Setup and manage an Azure Dev-Ops Project that uses Pipelines (CI/CD service) to release builds from a Github repository.
-            </li>
-            <li>
-              Monitor the Application's and Server's metrics, performance, and traffic to ensure smooth daily operations.
+              Monitor server and application performance metrics.
             </li>
           </ul>
 
@@ -241,7 +235,7 @@ const Portfolio = ({data}) => (
               <h6 style={{display: 'inline-block'}}><a href='https://www.beyondtheagency.co' >Beyondtheagency.co</a></h6> was developed in conjuction with Beyond the agency's in-house design team to be its online prescence, showcasing the amazing work this agency has to offer.
             </li>
             <li className=''>
-              Work closely with the Creative directors to plan UI according to UX considerations.
+              Work closely with the Creative directors to plan UI/UX.
             </li>
             <li>
               Maintain and update application design.
@@ -267,7 +261,7 @@ const Portfolio = ({data}) => (
               Developed Real Estate Listings pages for prominent Real Estate Agent in Aspen, Colorado.
             </li>
             <li>
-              Using Contentful, the site has a CMS where listings can be uploaded and pages made from the listing data.
+              Integrated with Contentful CMS, pages and urls are dynamically created from listing data uploaded by client.
             </li>
             <li>
               Integrate with third party service idx broker to provide MLS search within the web application. 
@@ -322,7 +316,7 @@ const Portfolio = ({data}) => (
             	JavaScript, jQuery, AJAX, Google Maps JavaScript API, HTML, CSS, Local Storage
             </li>
             <li style={{listStyleType: 'none'}}>
-              <a href="github.com/cubanerick/Around-the-Corner"><Img style={{marginBottom: '40px'}} fixed={data.github.childImageSharp.fixed}/></a>
+              <a href="https://github.com/cubanerick/Around-the-Corner"><Img style={{marginBottom: '40px'}} fixed={data.github.childImageSharp.fixed}/></a>
             </li>
           </ul>
         </div>
