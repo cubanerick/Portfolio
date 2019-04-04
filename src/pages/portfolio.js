@@ -246,9 +246,6 @@ const Portfolio = ({data}) => (
             <li>
               Maintain and update application design.
             </li>
-            <li>
-              Hosting on Heroku makes monitoring traffic, metrics, and scaling easy for a small agency.
-            </li>
           </ul>
 
           <ImageDisplay>
