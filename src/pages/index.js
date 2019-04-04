@@ -48,6 +48,7 @@ const Wrapper = styled.div`
     }
   }
   .grid2 {
+    text-align: center;
     grid-column: 2;
   }
 
@@ -90,9 +91,12 @@ const Wrapper = styled.div`
   .title {
     grid-column: 1/4;
     margin: 0;
+    padding-bottom: 20px;
   }
   .schoolLogo {
     width: 80px;
+    /* text-align: left; */
+    display: inline-block;
   }
   ul {
     text-decoration: none;
@@ -122,6 +126,15 @@ const LargeText = styled.span`
   padding-left: 10px;
 `;
 
+const GithubImg = styled(Img)`
+  /* display: inline-block; */
+`;
+
+const GitHubDiv = styled.div`
+  text-align: center;
+`;
+
+
 const IndexPage = ({data}) => (
   <Layout>
     <SEO 
@@ -134,8 +147,15 @@ const IndexPage = ({data}) => (
     <div style={{color: '#113255', paddingTop: '80px'}}>
       <p><LargeText>I</LargeText> am a Full-stack web developer experienced working with interdisciplinary teams building and implementing dynamic end-to-end web applications that are fast, integrated, reliable, and engaging , and follow the latest SEO practices and design patterns. I have developed, launched, and maintained multiple projects, including Dev-Ops Management and IT Administration. I have a passion for writing clean code and continued education in the computer sciences.</p>
     </div>
+    <div>
+      <GitHubDiv>
+      <a className='repoLink' href='https://github.com/cubanerick/portfolio'>
+        <GithubImg fixed={data.github.childImageSharp.fixed}/>
+        <p>Check out the repo for this site</p></a>
+      </GitHubDiv>
+    </div>
     <Wrapper>
-    <h2 className='title'>Tech Stack</h2>
+    <h2 className='title'>Skills &amp; Tech</h2>
       <div className='grid1'>
         <div className='col1 skillImg'><Img fluid={data.HTML.childImageSharp.fluid}/><p className='displayNone'>HTML</p></div>
         <div className='col2 skillImg'><Img fluid={data.CSS.childImageSharp.fluid}/><p className='displayNone'>CSS</p></div>
@@ -154,8 +174,10 @@ const IndexPage = ({data}) => (
       <div className='grid2'>
         <h2>Education</h2>
         <div className='education'>
-          <h3>UCLA Extension</h3>
-          <iframe frameBorder="0" title='UCLA Extension | Full Stack Web Development Bootcamp Certificate' scrolling="no" src="https://uclaextension.credly.com/embed.html#/?member_badge_id=15115246" width="180" height="230"></iframe>
+          <div>
+            <h3>UCLA Extension</h3>
+            <iframe frameBorder="0" title='UCLA Extension | Full Stack Web Development Bootcamp Certificate' scrolling="no" src="https://uclaextension.credly.com/embed.html#/?member_badge_id=15115246" width="180" height="230"></iframe>
+          </div>
 
           <Img className='schoolLogo' fluid={data.ASU.childImageSharp.fluid}/>
           <h3>Arizona State University</h3>
@@ -269,6 +291,13 @@ export const query = graphql`
       childImageSharp {
         fluid(quality: 100, maxWidth: 991) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    github: file(relativePath: { eq: "github.png" }) {
+      childImageSharp {
+        fixed(quality: 100, width: 89) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
