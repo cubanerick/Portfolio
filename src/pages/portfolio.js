@@ -186,7 +186,7 @@ const Portfolio = ({data}) => (
               Worked closely with the Senior Designer to implement design efforts across the new web platform. A CMS was created using Contentful which allowed for all the traditional CMS features.
             </li>
             <li>
-              <h6 style={{display: 'inline-block'}}>Developed<a href='https://www.orthomattress.com/stores' >Orthomattress.com/stores</a> , a Location finder for all Ortho Mattress stores and dynamically create server-side rendered pages for all locations.</h6>
+            Developed<h6 style={{display: 'inline-block'}}><a href='https://www.orthomattress.com/stores'>Orthomattress.com/stores</a></h6> , a Location finder for all Ortho Mattress stores and dynamically create server-side rendered pages for all locations.
             </li>
             <li>
               Create and maintain implementation of marketing tools such as Google Tags and Facebook pixels, and maintain the highest SEO. 
