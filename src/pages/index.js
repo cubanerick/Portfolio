@@ -147,9 +147,8 @@ const IndexPage = ({data}) => (
         <div className='col2 skillImg'><Img fluid={data.Gatsby.childImageSharp.fluid}/><p className='displayNone'>Gatsby</p></div>
         <div className='col3 skillImg'><Img fluid={data.Git.childImageSharp.fluid}/><p className='displayNone'>Git</p></div>
         <div className='col1 skillImg'><Img fluid={data.Azure.childImageSharp.fluid}/><p className='displayNone'>Azure</p></div>
-        <div className='col2 skillImg'><Img fluid={data.Heroku.childImageSharp.fluid}/><p className='displayNone'>Heroku</p></div>
-        <div className='col3 skillImg'><Img fluid={data.mysql.childImageSharp.fluid}/><p className='displayNone'>MySQL</p></div>
         <div className='col2 skillImg'><Img fluid={data.mongodb.childImageSharp.fluid}/><p className='displayNone'>MongoDB</p></div>
+        <div className='col3 skillImg'><Img fluid={data.mysql.childImageSharp.fluid}/><p className='displayNone'>MySQL</p></div>
       </div>
 
       <div className='grid2'>
@@ -197,13 +196,6 @@ export const query = graphql`
       }
     }
     ASU: file(relativePath: { eq: "asu_sparky.png" }) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 991) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    Heroku: file(relativePath: { eq: "Heroku.png" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 991) {
           ...GatsbyImageSharpFluid
