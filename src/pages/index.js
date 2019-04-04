@@ -132,7 +132,7 @@ const IndexPage = ({data}) => (
       lang='EN' 
     />
     <div style={{color: '#113255', paddingTop: '80px'}}>
-      <p><LargeText>I</LargeText> am a full-stack web developer experienced working with interdisciplinary teams to build high quality websites, that follow best practices, SEO, and responsive design. I have developed, launched, and maintained multiple projects, including setting up Dev-Ops and hosting. I have a passion for writing clean code and continued education in the computer sciences.</p>
+      <p><LargeText>I</LargeText> am a Full-stack web developer experienced working with interdisciplinary teams building and implementing dynamic end-to-end web applications that are fast, integrated, reliable, and engaging , and follow the latest SEO practices and design patterns. I have developed, launched, and maintained multiple projects, including Dev-Ops Management and IT Administration. I have a passion for writing clean code and continued education in the computer sciences.</p>
     </div>
     <Wrapper>
     <h2 className='title'>Tech Stack</h2>
