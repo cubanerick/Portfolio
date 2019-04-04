@@ -51,7 +51,7 @@ function SEO({ description, lang, keywords, title , author}) {
               }
             : []
         )}
-    />
+    ><link rel="canonical" href={`https://erickecheverria.tech`} /></Helmet>
   )
 }
 
